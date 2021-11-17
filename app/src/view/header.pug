@@ -1,0 +1,56 @@
+- var img = [{title: 'HTML', img:'../img/header-html.png'},{title: 'CSS', img:'../img/header-css.png'},{title: 'bootstrap 5', img:'../img/header-bootstrap.png'}]
+header.header
+      .container
+        .header__corousel    
+            div#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+               ol.carousel-indicators
+                  li.main__indicator.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                  li.main__indicator(data-target='#carouselExampleIndicators' data-slide-to='1')
+                  li.main__indicator(data-target='#carouselExampleIndicators' data-slide-to='2')
+               .carousel-main.row
+                  .carousel-inner
+                     .carousel-item.active
+                        .d-flex.flex-wrap
+                           .carousel-item__info.col-12.col-xl-6
+                              .sentence
+                                 h2.carousel-item__title My beginning 
+                                 p.carousel-item__text Self-Development and Training in the Training center
+                                 .btns.d-flex.flex-column.align-items-center
+                                    a.carousel-item-btn(href="#!") GET STARTED NOW
+                              .carousel-item-img.row
+                                 each val in img 
+                                    .carousel-card.col-xl-4.col-lg-3.col-md-2.d-flex.flex-column.align-items-center.justify-content-center
+                                       img.carousel-img__rasm(src=val.img, alt=val.img)
+                                       span.carousel-img__title.text-align-center= val.title 
+                           img.carousel-item__img.col-xl-6.d-block.w-100.h-100(src='../img/header-image.png' alt='img')
+                     
+                     .carousel-item
+                        .d-flex.flex-wrap
+                           .carousel-item__info.col-12.col-xl-6
+                              .sentence
+                                 h2.carousel-item__title My beginning 
+                                 p.carousel-item__text Self-Development and Training in the Training center
+                                 .btns.d-flex.flex-column.align-items-center
+                                    a.carousel-item-btn(href="#!") GET STARTED NOW
+                              .carousel-item-img.row
+                                 each val in img 
+                                    .carousel-card.col-xl-4.col-lg-3.col-md-2.d-flex.flex-column.align-items-center.justify-content-center
+                                       img.carousel-img__rasm(src=val.img, alt=val.img)
+                                       span.carousel-img__title.text-align-center= val.title 
+                           img.carousel-item__img.col-xl-6.d-block.w-100.h-100(src='../img/header-image.png' alt='img')
+                     
+                     .carousel-item
+                        .d-flex.flex-wrap
+                           .carousel-item__info.col-12.col-xl-6
+                              .sentence
+                                 h2.carousel-item__title My beginning 
+                                 p.carousel-item__text Self-Development and Training in the Training center
+                                 .btns.d-flex.flex-column.align-items-center
+                                    a.carousel-item-btn(href="#!") GET STARTED NOW
+                              .carousel-item-img.row
+                                 each val in img 
+                                    .carousel-card.col-xl-4.col-lg-3.col-md-2.d-flex.flex-column.align-items-center.justify-content-center
+                                       img.carousel-img__rasm(src=val.img, alt=val.img)
+                                       span.carousel-img__title.text-align-center= val.title 
+                           img.carousel-item__img.col-xl-6.d-block.w-100.h-100(src='../img/header-image.png' alt='img')
+                     

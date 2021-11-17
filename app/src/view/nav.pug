@@ -1,0 +1,12 @@
+nav.nav 
+   .container 
+      a.logo(href='#!')
+         img.logo__img(src="../img/MYWORK.png", alt="img")
+      .nav__wrapper  
+         span.fad.fa-ellipsis-h-alt.nav__btn 
+         ul.nav__menu 
+            each val in ['About me','Works','to order']
+               li 
+                  a(href="#!").nav__menu-link= val 
+            a.nav__icon(href="tel:+998996777556")  
+               img.nav-icon(src="../img/nav-icon.png", alt="icon")

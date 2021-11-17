@@ -1,0 +1,40 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+.container {
+   @include container()
+}
+.row {
+   @include row()
+}
+
+.TITLE {
+   font-family: 'M';
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 49px;
+   text-align: center;
+   text-transform: capitalize;
+   color: #7177F1;
+   @media (max-width: 770px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+   @media (max-width: 550px) {
+      font-size: 30px;
+      line-height: 20px;
+    }
+}
+.btn:hover {
+   background: $btn-hover-bg;
+   color: $main-color;
+}

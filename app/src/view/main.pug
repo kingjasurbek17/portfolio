@@ -1,0 +1,123 @@
+main.main 
+   .main-frontend
+      .container 
+         .main-frontend__content.row
+            .d-flex.flex-wrap 
+               .main-frontend__img.col-xl-6
+                  img.frontend-img(src="../img/frontend-image.png", alt="image")
+                  a(href="#!") 
+                     .frontend-img__btn my work for
+                  .frontend-img__number 5+
+               .main-frontend__about.col-xl-6
+                  h2.frontend-title What is Frond-End
+                  p.frontend-text It Is The Development Of The User Interface And Functions That Run On The Client Side Of A Website Or Application This Is Everything That A User Sees When Opening A Or Aweb Page And With Which He Interacts. 
+                  p.text-user This Is Everything That A User Sees When Opening A Web Page And With Which He Interacts.
+                  .main-frontend__btnn
+                     a.text(href="#!") Go To Work
+   .capabilities
+      .container
+         .TITLE capabilities 
+         .capabilities__content.row 
+            .d-flex.flex-wrap 
+               .capabilities__technologies.col-xl-6
+                  .acc__card                   
+                     #accordionExample.accordion
+                        #HeadingOne.acc__header
+                           button.acc__btn(type='button' data-toggle='collapse' data-target='#html' aria-expanded='true')
+                              img.acc__img(src="../img/header-html.png", alt="html")
+                              span.acc__title HTML
+                              span.acc__icon.fas.fa-triangle
+                        #html.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                           .acc__body
+                              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus ligula blandit enim. Accumsan est 
+                        #HeadingTwo.acc__header
+                           button.acc__btn.collapsed(type='button' data-toggle='collapse' data-target='#css' aria-expanded='true')
+                              img.acc__img(src="../img/header-css.png", alt="html")
+                              span.acc__title CSS
+                              span.acc__icon.fas.fa-triangle
+                        #css.collapse(aria-labelledby='headingOne' data-parent='#accordionExample')
+                           .acc__body
+                              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus ligula blandit enim. Accumsan est 
+                        #HeadingThree.acc__header
+                           button.acc__btn.collapsed(type='button' data-toggle='collapse' data-target='#bootstrap4' aria-expanded='true')
+                              img.acc__img(src="../img/header-bootstrap.png", alt="bootstrap4")
+                              span.acc__title BOOTSTRAP 5
+                              span.acc__icon.fas.fa-triangle
+                        #bootstrap4.collapse(aria-labelledby='headingOne' data-parent='#accordionExample')
+                           .acc__body
+                               | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus ligula blandit enim. Accumsan est 
+               .capabilities__img.col-12.col-xl-6.col-lg-6.col-md-4.col-sm-3 
+                  img(src="../img/capabilities-image.png", alt="img")
+   .MyWork 
+      .container 
+         .TITLE  My Works
+         .MyWork__content.row 
+            .MyWork__technologies.d-flex.flex-wrap
+               #v-pills-tab.nav.d-flex.flex-column.nav-pills.col-xl-3(role='tablist' aria-orientation='vertical')
+                  a#v-pills-home-tab.nav-linkkk.active(data-toggle='pill' href='#nike' role='tab' aria-controls='nike' aria-selected='true') NIKE
+                  a#v-pills-profile-tab.nav-link(data-toggle='pill' href='#silver' role='tab' aria-controls='silver' aria-selected='false') SILVER HOUSE
+                  a#v-pills-messages-tab.nav-link(data-toggle='pill' href='#orange' role='tab' aria-controls='orange' aria-selected='false') ORANGE-MARKETING
+                  a#v-pills-toshkent-tab.nav-link(data-toggle='pill' href='#toshkent' role='tab' aria-controls='toshkent' aria-selected='false') TOSHKENT
+                  a#v-pills-street-tab.nav-link(data-toggle='pill' href='#street' role='tab' aria-controls='street' aria-selected='false') STREET88
+                  a#v-pills-settings-tab.nav-linkk(data-toggle='pill' href='#pizzeria' role='tab' aria-controls='pizzeria' aria-selected='false') PIZZERIA
+               #v-pills-tabContent.tab-content.col-xl-9.col-lg-9
+                  #nike.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nike') 
+                     .container-fluid 
+                        .row.tabs__example 
+                           img.tab__img.col-xl-3(src="../img/nike.jpg", alt="")
+                           .tabs__info.col-xl-9
+                              h1.tab__title NIKE Layout
+                              p.tabs__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam 
+
+                              p.tab__text nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed
+                              a.tab__btn(href="#!") Details  
+                  #silver.tab-pane.fade(role='tabpanel' aria-labelledby='silver')
+                     .container-fluid 
+                        .row.tabs__example 
+                           img.tab__img.col-xl-3(src="../img/silver-house.jpg", alt="")
+                           .tabs__info.col-xl-9
+                              h1.tab__title SILVER HOUSE
+                              p.tabs__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam 
+
+                              p.tab__text nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed 
+                              a.tab__btn(href="#!") Details 
+                  #orange.tab-pane.fade(role='tabpanel' aria-labelledby='orange')
+                     .container-fluid 
+                        .row.tabs__example 
+                           img.tab__img.col-xl-3(src="../img/orange-market.jpg", alt="")
+                           .tabs__info.col-xl-9
+                              h1.tab__title ORANGE-MARKETING
+                              p.tabs__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam 
+
+                              p.tab__text nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed
+                              a.tab__btn(href="#!") Details  
+                  #toshkent.tab-pane.fade(role='tabpanel' aria-labelledby='toshkent')
+                     .container-fluid 
+                        .row.tabs__example 
+                           img.tab__img.col-xl-3(src="../img/toshkent.jpg", alt="")
+                           .tabs__info.col-xl-9
+                              h1.tab__title TOSHKENT
+                              p.tabs__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam 
+
+                              p.tab__text nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed
+                              a.tab__btn(href="#!") Details  
+                  #street.tab-pane.fade(role='tabpanel' aria-labelledby='street')
+                     .container-fluid 
+                        .row.tabs__example 
+                           img.tab__img.col-xl-3(src="../img/burger.jpg", alt="")
+                           .tabs__info.col-xl-9
+                              h1.tab__title STREET88
+                              p.tabs__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam 
+
+                              p.tab__text nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed 
+                              a.tab__btn(href="#!") Details 
+                  #pizzeria.tab-pane.fade(role='tabpanel' aria-labelledby='pizzeria')
+                     .container-fluid 
+                        .row.tabs__example 
+                           img.tab__img.col-xl-3(src="../img/pizza.jpg", alt="")
+                           .tabs__info.col-xl-9
+                              h1.tab__title PIZZERIA
+                              p.tabs__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam 
+
+                              p.tab__text nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed
+                              a.tab__btn(href="#!") Details  

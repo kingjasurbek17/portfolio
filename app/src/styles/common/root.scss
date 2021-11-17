@@ -1,0 +1,36 @@
+ $main-color: #fff;
+ $title: #7177F1;
+ $btn-big:#7177F1;
+ $btn-hover-bg: #7177F1;
+ 
+ $Montserrat: ('Regular', 400),('Bold', 700);
+ 
+ @each $name, $weight in $Montserrat {
+   @font-face {
+      font-family: 'M';
+      src: url(../fonts/montserrat/Montserrat-#{$name}.woff2);
+      font-weight: #{$weight};
+    }  
+ }
+ $Comfortaa: ('Regular', 400),('Bold', 700);
+ 
+ @each $name, $weight in $Comfortaa {
+   @font-face {
+      font-family: 'C';
+      src: url(../fonts/comfortaa/Comfortaa-#{$name}.woff2);
+      font-weight: #{$weight};
+    }  
+ }
+ $Roboto: ('Regular', 400),('Medium', 500);
+ 
+ @each $name, $weight in $Roboto {
+   @font-face {
+      font-family: 'R';
+      src: url(../fonts/roboto/Roboto-#{$name}.woff2);
+      font-weight: #{$weight};
+    }  
+ }
+
+
+ 
+  
